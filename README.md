@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name : R Guruprasad 
-Roll no : 212222240033
-Date of experiment : 20/2/2024
+#### Name : R Guruprasad 
+#### Roll no : 212222240033
+#### Date of experiment : 20/2/2024
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
@@ -130,6 +130,57 @@ ret
 ```
 ## Output  
 ![image](https://github.com/R-Guruprasad/EXPERIMENT--01-ALP-FOR-8086/assets/119390308/c3251cd2-167f-4677-99e5-2e811ac6c99b)
+
+## Program for logical operations
+## AND
+```
+org 100h
+mov bx,1000h;
+and bx,1111h;
+mov [0040h+02],bx;
+ret
+```
+## Output
+![image](https://github.com/R-Guruprasad/EXPERIMENT--01-ALP-FOR-8086/assets/119390308/ad1c29ea-dc79-4f07-961a-b241fdffb99e)
+
+## OR
+```
+org 100h
+mov ax,[0040h+06];
+mov bx,1000h;
+or ax,bx;
+mov [0040h+02],ax;
+ret
+```
+
+## Output
+![image](https://github.com/R-Guruprasad/EXPERIMENT--01-ALP-FOR-8086/assets/119390308/1baa3385-8944-4a1c-b4af-0661283452bd)
+
+## NOT
+```
+org 100h
+mov bx,0040h;
+mov ax,[bx]; 
+not al;
+mov [0040h+04],ax;
+ret
+```
+
+## Output
+![image](https://github.com/R-Guruprasad/EXPERIMENT--01-ALP-FOR-8086/assets/119390308/9f2e9918-5814-40f4-af5a-63debcad33b4)
+
+## XOR
+```
+org 100h
+mov bx,0040h;
+mov ax,[bx]; 
+xor ax,bx;
+mov [0040h+04],ax;
+ret
+```
+
+## Output
+![image](https://github.com/R-Guruprasad/EXPERIMENT--01-ALP-FOR-8086/assets/119390308/39018f70-7414-48fd-8f60-2461251e2c0b)
 
 ## Result :
 
