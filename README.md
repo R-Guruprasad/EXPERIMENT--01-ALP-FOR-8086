@@ -1,7 +1,8 @@
-# EXPERIMENT--01-ALP-FOR-8086
 #### Name : R Guruprasad 
 #### Roll no : 212222240033
-#### Date of experiment : 20/2/2024
+
+# EXPERIMENT--01-ALP-FOR-8086
+
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
